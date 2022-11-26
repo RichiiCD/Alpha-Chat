@@ -1,0 +1,87 @@
+
+.login-app {
+    width: 100%;
+    height: 100vh;
+    background-color: #212121;
+}
+
+.entry-container {
+    width: 400px;
+    height: fit-content;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #2c2c2c;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 40px 0px 60px 0px;
+}
+
+.entry-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.entry-container form .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry-container form input {
+    width: 65%;
+    height: 30px;
+}
+
+.entry-container form button {
+    width: 65%;
+}
+
+.entry-container form .login-error {
+    color: rgb(216, 53, 53);
+    width: 65%;
+    visibility: hidden;
+    font-size: 16px;
+    text-align: center;
+}
+
+.entry-container form .login-error.visible {
+    visibility: visible;
+}
+
+.entry-container form .login-error p {
+    margin: -10px 0;
+}
+
+.entry-container .entry-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.entry-img-container img {
+    width: 17%;
+}
+
+.entry-container .registration-redirect {
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    color: rgb(117, 117, 117);
+    transition: 0.2s ease-in-out;
+}
+
+.entry-container .registration-redirect:hover {
+    color: rgb(146, 146, 146);
+}

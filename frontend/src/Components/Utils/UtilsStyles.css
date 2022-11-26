@@ -1,0 +1,802 @@
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.input-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.styled-input {
+    background-color: rgb(78, 78, 78);
+    border-radius: 5px;
+    border: 1px solid rgb(65, 65, 65);
+    color: rgb(197, 197, 197);
+    padding-left: 10px;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+}
+
+.styled-input::placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.styled-input:focus {
+    outline: none;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.styled-input.error {
+    border: 1px solid rgb(216, 53, 53);
+}
+
+.styled-input.error:focus {
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.styled-input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    padding-right: 3%;
+    opacity: 0.7;
+    filter: invert(0.8);
+}
+
+.styled-input-file {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    width: 120px !important;
+    height: 120px !important;
+    cursor: pointer;
+}
+
+.fake-input-file {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #4e755d;
+    border-radius: 100%;
+    border:  1px solid rgb(56, 55, 55);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.fake-input-file::after {
+    content: 'Press to select the icon';
+    color: #d0d1d2;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.styled-input-file:hover + .fake-input-file {
+    background-color: #476452;
+}
+
+
+
+
+.submit-button {
+    background-color: #4e755d;
+    border: 1px solid #4e755d;
+    border-radius: 5px;
+    color: rgb(197, 197, 197);
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.submit-button:enabled:focus {
+    outline: none;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.submit-button:enabled:hover {
+    background-color: #476452;
+}
+
+.submit-button:disabled {
+    opacity: 40%;
+    cursor: default;
+}
+
+
+.alert-button {
+    background-color: rgb(216, 53, 53);
+    border: 1px solid rgb(216, 53, 53);
+    border-radius: 5px;
+    color: rgb(197, 197, 197);
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.alert-button:focus {
+    outline: none;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.alert-button:hover {
+    background-color: rgb(189, 50, 50);
+}
+
+.alert-button:disabled {
+    opacity: 40%;
+    cursor: default;
+}
+
+
+
+
+.action-button {
+    border: 1px solid #4e755d;
+    background-color: #4e755d;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: rgb(197, 197, 197);
+    transition: 0.2s ease-in-out;
+
+}
+
+.action-button:focus {
+    outline: none;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.action-button:hover {
+    background-color: #476452;
+}
+
+
+
+
+
+.flex-v-alings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex-h-alings {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.flex-vh-alings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.flex-column-direction {
+    flex-direction: column;
+}
+
+.gap-0 {
+    gap: 0;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+
+.svg-icon {
+    width: 1.4em;
+    color: var(--text-lwr-grey);
+}
+
+.userprofile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-displaymenu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-white);
+    font-size: 1.1em;
+    transition: 0.2s;
+}
+
+.btn-displaymenu:hover {
+    color: var(--text-lwr-grey-secondary);
+}
+
+.info-element {
+    position: relative;
+    overflow: visible;
+}
+
+.info-element:hover::after {
+    content: 'Profile';
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px 15px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+}
+
+.clickable {
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.clickable:active {
+    opacity: 75%;
+    transform: scale(0.98);
+}
+
+.clickable:hover {
+    opacity: 80%;
+}
+
+
+.menu {
+    margin: 0;
+    padding: 10px;
+}
+
+.menu .item {
+    color: white;
+    list-style: none;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu .item:hover {
+    background-color: #1d1d1d;
+}
+
+.menu .item i {
+    float: right;
+}
+
+.menu .item.highlight {
+    color: rgb(216, 53, 53);
+}
+
+.menu input {
+    display: none;
+}
+
+.menu input:checked + label {
+    background-color: #1d1d1d;
+}
+
+.contextual-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--background-oscuro);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    transform-origin:top;
+    animation: menuanimation 0.2s forwards;
+}
+
+@keyframes menuanimation {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.contextual-menu.visible {
+    display: block;
+}
+
+
+
+/* ALERT MESSAGE */
+
+.alert-message {
+    position: fixed;
+    z-index: 100;
+    min-width: 300px;
+    min-height: 150px;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #151515;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    color: #d0d1d2;
+    animation: messageanimation 0.2s forwards;
+}
+
+@keyframes messageanimation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.alert-message .alert-icon {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 15px;
+}
+
+.alert-message i {
+    color: rgb(216, 53, 53);
+    font-size: 2em;
+}
+
+.alert-message p {
+    font-size: 1.1em;
+}
+
+.alert-message .alert-buttons-container {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.alert-message .submit-button {
+    margin-top: 0 !important;
+}
+
+
+
+/* COMMUNITY CONFIG */
+
+.settings-item {
+    width: 100%;
+    height: fit-content;
+    padding: 15px 0px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.settings-item:last-of-type {
+    border: none;
+}
+
+.settings-item .title {
+    color: var(--text-lwr-grey-secondary);
+    font-size: 1.15em;
+    margin-right: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.settings-item .subtitle {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+}
+
+.settings-item .options {
+    color: var(--text-lwr-grey);
+    margin-left: auto;
+    font-size: 1.1em;
+}
+
+.settings-item .settingsmenu {
+    position: fixed;
+}
+
+.settings-item .svg-icon {
+    font-size: 1.2em;
+}
+
+
+
+
+/* NEW ACTION MESSAGE */
+
+.newaction-message {
+    position: fixed;
+    z-index: 100;
+    min-width: 350px;
+    min-height: 150px;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #151515;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    color: #d0d1d2;
+    animation: messageanimation 0.2s forwards;
+}
+
+.newaction-message .newaction-icon {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 15px;
+}
+
+.newaction-message i {
+    color: #818489;
+    font-size: 2em;
+}
+
+.newaction-message h3 {
+    font-size: 1.1em;
+    text-align: center;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.newaction-message .defaultform input {
+    width: 80%;
+    height: 30px;
+}
+
+.backgroundhide {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #151515;
+    width: 100vw;
+    height: 100vh;
+    animation: opacityanimation 0.2s forwards;
+
+}
+
+@keyframes opacityanimation {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 60%;
+    }
+}
+
+
+
+/* FIND USER */
+
+.finduser-container {
+    height: fit-content;
+}
+
+.finduser-container input {
+    width: 80%;
+    height: 30px;
+}
+
+.finduser-container .usersfound-list {
+    position: fixed;
+    width: 400px;
+    top: 230px;
+    height: fit-content;
+    max-height: 250px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: #151515;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.finduser-container .usersfound-list::after {
+    content: ' ';
+    display: block;
+    position: fixed;
+    bottom: -38px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 25px solid #151515;
+}
+
+.finduser-container .usersfound-list::-webkit-scrollbar{
+    background-color: #151515;
+    width: 10px;
+    border-radius: 10px;
+}
+
+.finduser-container .usersfound-list::-webkit-scrollbar-thumb {
+    background: var(--scroll-line); 
+    border-radius: 10px;
+}
+
+.finduser-container .usersfound-list p {
+    padding: 0;
+}
+
+.finduser-container .usersfound-list .settings-item {
+    padding-left: 10px;
+}
+
+.finduser-container .usersfound-list .settings-item:hover {
+    cursor: pointer;
+    background-color: #131212;
+}
+
+
+
+/* USER PROFILE */
+ 
+
+.userprofile-container {
+    position: fixed;
+    z-index: 101;
+    width: 600px;
+    height: 320px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #151515;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    color: #d0d1d2;
+    animation: messageanimation 0.2s forwards;
+}
+
+.userprofile-container .userprofile-img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.userprofile-container .username {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.userprofile-container .code {
+    font-size: 1em; 
+    margin-bottom: 15px;
+    color: var(--text-lwr-grey);
+}
+
+.userprofile-container .description {
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+}
+
+.userprofile-container .submit-button {
+    float: right;
+    margin: 20px 0px;
+}
+
+.userprofile-container .closeprofile {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: none;
+    border: none;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* SPINNER */
+
+.loading-spinner {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.loading-spinner div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+
+}
+
+.loading-spinner div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.loading-spinner div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.loading-spinner div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+
+
+/* TOOLTIP */
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::before,
+[data-tooltip]::after {
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    opacity: 0;
+
+    text-transform: none; 
+    font-size: .9em;
+}
+
+[data-tooltip]::before {
+    content: '';
+    z-index: 1001;
+    border: 5px solid transparent;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip); /* magic! */
+    z-index: 1000;
+    color: white;
+    
+    /* most of the rest of this is opinion */
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    
+    /* 
+    Let the content set the size of the tooltips 
+    but this will also keep them from being obnoxious
+    */
+    min-width: 3em;
+    max-width: 21em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    /* visible design of the tooltip bubbles */
+    padding: 1ch 1.5ch;
+    border-radius: .3ch;
+    box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+    background: rgb(20, 20, 20);
+}
+
+
+[data-tooltip]:hover::before,
+[data-tooltip]:hover::after {
+    display: block;
+    opacity: 100%;
+}
+
+[data-tooltip]:not([flow])::before,
+[data-tooltip][flow^="up"]::before {
+    bottom: 100%;
+    border-bottom-width: 0;
+    border-top-color: rgb(20, 20, 20);
+}
+
+/* ONLY the ::after */
+[data-tooltip]:not([flow])::after,
+[data-tooltip][flow^="up"]::after {
+    bottom: calc(100% + 5px);
+}
+
+/* Both ::before & ::after */
+[data-tooltip]:not([flow])::before,
+[data-tooltip]:not([flow])::after,
+[data-tooltip][flow^="up"]::before,
+[data-tooltip][flow^="up"]::after {
+    left: 50%;
+    transform: translate(-50%, -.5em);
+}
+
+
+
+/* NOTIFICATION */
+
+.notifications-list {
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    width: 300px;
+    height: 90vh;
+    bottom: 15px;
+    right: 15px;
+    color: white;
+}
+
+.notification {
+    width: 300px;
+    height: 100px;
+    opacity: 80%;
+    background-color: var(--background-oscuro);
+    border-radius: 5px;
+    transform: translateX(300px);
+    animation: notification-anmiation 0.2s ease-in-out forwards;
+}
+
+@keyframes notification-anmiation {
+    0% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.notification .noti-image {
+    width: 25%;
+    height: 100px;
+    float: left;
+}
+
+.notification .noti-info {
+    width: 75%;
+    height: 100px;
+    padding-right: 10px;
+    float: left;
+}
+
+.notification .noti-info p:last-of-type {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--text-lwr-grey-secondary);
+}
