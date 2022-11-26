@@ -13,7 +13,7 @@ Alpha is a chat web application developed using Django (back end) and React (fro
 ## Config the environment
 
 1. Downaload and install Python v3.9.
-2. Install the python dependencies that you can find in the `requirements.txt` file.
+2. Install the python dependencies that you can find in the `backend\requirements.txt` file.
 3. Download and install Node.js v16.
 4. Configure the server address (localhost by default).
 
