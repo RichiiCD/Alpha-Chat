@@ -32,6 +32,4 @@ alpha\frontend# npm start
 ```
 
 
-## Application examples
-
 
